@@ -1,0 +1,173 @@
+/* general page styling  */
+body {
+    background-color: beige;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #ff7043;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Image Section */
+.image-section img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.image-box {
+    display: flex;
+    gap: 5px;
+    height: 300px;
+    padding: 20px;
+}
+
+/* image 1 */
+.img-1 {
+    overflow: hidden;
+    /* Clips the image as it grows */
+    /* width: 300px; */
+}
+
+.img-1 {
+    width: 100%;
+    transition: transform .5s ease;
+    /* Smooth animation */
+}
+
+.img-1:hover {
+    transform: scale(1.2);
+    /* Zooms in by 20% */
+}
+
+/* Image 2 */
+.img-2 {
+    overflow: hidden;
+    /* Clips the image as it grows */
+    /* width: 300px; */
+}
+
+.img-2 {
+    width: 100%;
+    transition: transform .5s ease;
+    /* Smooth animation */
+}
+
+.img-2:hover {
+    transform: scale(1.2);
+    /* Zooms in by 20% */
+}
+
+/* image 3 */
+.img-3 {
+    overflow: hidden;
+    /* Clips the image as it grows */
+    /* width: 300px; */
+}
+
+.img-3 {
+    width: 100%;
+    transition: transform .5s ease;
+    /* Smooth animation */
+}
+
+.img-3:hover {
+    transform: scale(1.2);
+    /* Zooms in by 20% */
+}
+
+/* Recipe Details */
+.details {
+    background-color: #fff3e0;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Flexbox Layout */
+.content {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Ingredients and Instructions */
+.ingredients, .instructions {
+    flex: 1;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Tips Section */
+.tips {
+    background-color: #e8f5e9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Nutrition Section */
+.nutrition {
+    background-color: #e3f2fd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Hover Effect */
+a:hover {
+    color: red;
+}
+/* =========================
+   TABLET VIEW
+========================= */
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+/* =========================
+   MOBILE VIEW
+========================= */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ingredients,
+    .instructions {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
